@@ -61,4 +61,11 @@ used to move one or more files from one location to another. Unlike 'copy' when 
 move source_dir dest_dir
 ```
 
+## del
+use it to delete stuff, be careful, it does not prompt for confirmation, but using `/P` should help you with that and you should consider using it always
+
+```shell
+del /P *.txt
+```
+
 
