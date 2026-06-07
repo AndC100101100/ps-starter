@@ -25,7 +25,8 @@ dir
 ```
 
 to view with hidden files
-```shell`
+
+```shell
 dir /A
 ```
 
