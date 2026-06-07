@@ -68,4 +68,33 @@ use it to delete stuff, be careful, it does not prompt for confirmation, but usi
 del /P *.txt
 ```
 
+## rmdir
+remove directories. if a dir is not empty it wont allow it, but you can use the `/S` flag to override that behavior
+```shell
+rmdir /S Demo
+```
+## more
+
+used to display the contents of a file one page at a time. It works much the same as the more command from Linux. A good use of 'more' is where a command has a large output and you wish to page through it.
+
+```shell
+dir "c: \Windows" | more
+```
+## find
+'find' searches inside files for a specified string of text. After searching the files, 'find' displays any lines of text that contain the search string. 
+
+```shell
+find c:\Users\User\* "hello" 2> nul
+```
+## where 
+roughly equivalent to the linux one, use it to locate files on a computa
+
+```shell
+where "file*.txt"
+```
+default behavior can be changed by using the `/R` switch and specifying a directory; this will cause 'where' to search this directory and all sub directories for the file. 
+
+```shell
+where /R . "file*.txt"
+```
 
